@@ -72,6 +72,12 @@ src/firebase.js: Firebase configuration and initialization.
 public/probability.pdf: The sample PDF file placed in the public folder (can be replaced with any PDF).
 
 
+### module description
+- **React PDF Viewer**: A React library for displaying PDFs within the application.
+- **Firebase.js**:  A real-time database service used for syncing the current page between users and managing authentication if needed.
+- **PDF.js**:  A library by Mozilla for rendering PDFs directly in the browser.
+
+
       
 
 
