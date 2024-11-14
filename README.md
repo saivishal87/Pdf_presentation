@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# PDF Presentation App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application built with React and Firebase that allows users to view and navigate through PDFs in real-time. This app supports collaborative PDF viewing, where changes made by an admin (such as moving to a new page) are synced and reflected for all viewers. 
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Real-time PDF Viewing**: The app uses Firestore to sync the current page in real-time, allowing multiple users to stay in sync as they navigate the PDF.
+- **Admin and Viewer Roles**: Admins can change pages, and the viewers' PDF view automatically updates to match the admin's page.
+- **Smooth Page Navigation**: The PDF Viewer uses a customizable scale and navigation to provide an easy-to-use reading experience.
 
-### `npm start`
+## Demo
+<img width="1440" alt="Screenshot 2024-11-14 at 6 51 17 PM" src="https://github.com/user-attachments/assets/3020465b-0900-4a8a-8305-0472526e7cbc">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Demo video
+https://github.com/user-attachments/assets/2c9cbcf2-a09a-4ed3-94d6-9dbb5e7da6c9
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **React**: For building the interactive front-end user interface.
+- **Firebase Firestore**: Real-time database for syncing PDF page updates between admin and viewers.
+- **PDF.js**: To render PDFs within the application.
+- **Firebase Storage**: Optional, for storing PDF files (not used in this example but can be added for file uploads).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+To get a local copy of this project up and running, follow these steps.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Node.js**: Make sure you have Node.js installed. You can download it [here](https://nodejs.org/).
+- **Firebase Project**: Set up a Firebase project and Firestore database, then copy your Firebase configuration details.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   git clone https://github.com/saivishal87/Pdf_presentation.git
+   cd Pdf_presentation
+   
+2. Install dependencies:
+     ```bash
+     npm install
+     
+3. Create a .env file in the root directory and add your Firebase configuration:
+     ```bash
+     REACT_APP_API_KEY=your-api-key
+     REACT_APP_AUTH_DOMAIN=your-auth-domain
+     REACT_APP_PROJECT_ID=your-project-id
+     REACT_APP_STORAGE_BUCKET=your-storage-bucket
+     REACT_APP_MESSAGING_SENDER_ID=your-messaging-sender-id
+     REACT_APP_APP_ID=your-app-id
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ 4. Start the development server:
+      ```bash
+      npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The app will be available at http://localhost:3000.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Admin View:
+If logged in as an admin, the user can navigate through the PDF, and the current page will be updated in Firestore.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Viewer View:
+Viewers connected to the app will automatically follow the page the admin is on, thanks to the Firestore sync feature.
 
-### Code Splitting
+### Project Structure
+src/components/PDFViewer.js: Main PDF viewer component, which handles the rendering of the PDF and syncing page updates.
+src/firebase.js: Firebase configuration and initialization.
+public/probability.pdf: The sample PDF file placed in the public folder (can be replaced with any PDF).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+### module description
+- **React PDF Viewer**: A React library for displaying PDFs within the application.
+- **Firebase.js**:  A real-time database service used for syncing the current page between users and managing authentication if needed.
+- **PDF.js**:  A library by Mozilla for rendering PDFs directly in the browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+      
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
