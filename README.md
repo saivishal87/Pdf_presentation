@@ -55,4 +55,22 @@ To get a local copy of this project up and running, follow these steps.
       ```bash
       npm start
 
+The app will be available at http://localhost:3000.
+
+
+Usage
+Admin View:
+If logged in as an admin, the user can navigate through the PDF, and the current page will be updated in Firestore.
+
+Viewer View:
+Viewers connected to the app will automatically follow the page the admin is on, thanks to the Firestore sync feature.
+
+Project Structure
+src/components/PDFViewer.js: Main PDF viewer component, which handles the rendering of the PDF and syncing page updates.
+src/firebase.js: Firebase configuration and initialization.
+public/probability.pdf: The sample PDF file placed in the public folder (can be replaced with any PDF).
+
+
+      
+
 
