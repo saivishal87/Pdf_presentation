@@ -10,7 +10,7 @@ A web application built with React and Firebase that allows users to view and na
 
 ## Demo
 
-[![Demo Video](https://drive.google.com/file/d/1jjor17VIf3XIcY_HaOXm6BJsXzLEl93x/view?usp=sharing))](https://drive.google.com/file/d/1ImzGCG_Y9vUD39ybU94fRWBvTyExo0DZ/view?usp=sharinghttps://drive.google.com/file/d/1ImzGCG_Y9vUD39ybU94fRWBvTyExo0DZ/view?usp=sharing)
+[![Demo Video](https://drive.google.com/file/d/1jjor17VIf3XIcY_HaOXm6BJsXzLEl93x/view?usp=sharing)](https://drive.google.com/file/d/1ImzGCG_Y9vUD39ybU94fRWBvTyExo0DZ/view?usp=sharinghttps://drive.google.com/file/d/1ImzGCG_Y9vUD39ybU94fRWBvTyExo0DZ/view?usp=sharing)
 
 Click the thumbnail above to watch a demo of the app in action.
 
