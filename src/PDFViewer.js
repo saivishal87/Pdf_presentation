@@ -51,10 +51,11 @@ function PDFViewer() {
       
       <Worker workerUrl={GlobalWorkerOptions.workerSrc}>
         <Viewer 
+          //key={currentPage}  add this line for viewer
           fileUrl={pdfUrl} 
           defaultScale={1.5} 
           initialPage={currentPage-1} // Viewer is zero-indexed
-          onPageChange={isAdmin ? onPageChange : undefined} // Only attach onPageChange for admin
+          onPageChange={isAdmin ? onPageChange : undefined} // Only attach onPageChange for admin and remove this for viewer 
         />
       </Worker>
     </div>
@@ -62,5 +63,6 @@ function PDFViewer() {
 }
 
 export default PDFViewer;
+
 
 
