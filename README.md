@@ -42,7 +42,7 @@ To get a local copy of this project up and running, follow these steps.
      ```bash
      npm install
      
-3.Create a .env file in the root directory and add your Firebase configuration:
+3. Create a .env file in the root directory and add your Firebase configuration:
      ```bash
      REACT_APP_API_KEY=your-api-key
      REACT_APP_AUTH_DOMAIN=your-auth-domain
@@ -51,7 +51,7 @@ To get a local copy of this project up and running, follow these steps.
      REACT_APP_MESSAGING_SENDER_ID=your-messaging-sender-id
      REACT_APP_APP_ID=your-app-id
 
- 4.Start the development server:
+ 4. Start the development server:
       ```bash
       npm start
 
