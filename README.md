@@ -9,6 +9,7 @@ A web application built with React and Firebase that allows users to view and na
 - **Smooth Page Navigation**: The PDF Viewer uses a customizable scale and navigation to provide an easy-to-use reading experience.
 
 ## Demo
+<img width="1440" alt="Screenshot 2024-11-14 at 6 51 17 PM" src="https://github.com/user-attachments/assets/3020465b-0900-4a8a-8305-0472526e7cbc">
 
 [![Demo Video](https://drive.google.com/file/d/1jjor17VIf3XIcY_HaOXm6BJsXzLEl93x/view?usp=sharing)](https://drive.google.com/file/d/1ImzGCG_Y9vUD39ybU94fRWBvTyExo0DZ/view?usp=sharinghttps://drive.google.com/file/d/1ImzGCG_Y9vUD39ybU94fRWBvTyExo0DZ/view?usp=sharing)
 
